@@ -33,15 +33,15 @@ export default function Page() {
     }
 
     return (
-       <form onSubmit={handleSubmit}>
-        <div  className="flex justify-center">
+       <form onSubmit={handleSubmit} className=" bg-blue-900 w-60 p-5 mt-8 ml-96 text-black">
+        <div  className="flex justify-center ">
             <input required type="text" placeholder="Item name" value={name} onChange={handleNameChange} Value={name} className="text-black"/>
         </div>
         <br/>
 
         <div className="flex justify-center">
             <input required type="number" min="1" max="99" 
-            className="mr-1 w-20 text-black"
+            className="mr-1 w-20 text-black-900"
             placeholder="1" value={quality} onChange={handleQualityChange}/>
             <br/>
             <select required value={category} onChange={handleCategoryChange} className="text-black">
